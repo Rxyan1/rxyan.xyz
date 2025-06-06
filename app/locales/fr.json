@@ -1,0 +1,13 @@
+{
+  "nav": {
+    "skills": "Compétences",
+    "projects": "Projets",
+    "experience": "Expérience",
+    "education": "Éducation",
+    "contact": "Contact",
+    "downloadCV": "Télécharger le CV",
+    "adaptabilite": "Adaptabilité",
+    "ecouteActive": "Écoute active",
+    "autonomie": "Autonomie"
+  }
+}

@@ -7,6 +7,9 @@ export const dictionary = {
       education: "Formation",
       contact: "Contact",
       downloadCV: "Télécharger CV",
+      adaptabilite: "Adaptabilité",
+      ecouteActive: "Écoute active",
+      autonomie: "Autonomie",
     },
     hero: {
       jobTitle: "Développeur Web & Data | Recherche d'alternance",
@@ -62,8 +65,8 @@ export const dictionary = {
         resp1: "Gestion de projet",
         resp2: "Mise en place d'un cahier des charges",
         resp3: "Gestion de base de données",
-        resp4: "Création de page template",
-        resp5: "Création de Système de sondage",
+        resp4: "Création de panel admin",
+        resp5: "Création d'une systeme de gestion d'évenement et de stock",
         resp6: "Création de Chatbox par API et IA",
       },
       hackademic: {
@@ -143,6 +146,9 @@ export const dictionary = {
       education: "Education",
       contact: "Contact",
       downloadCV: "Download CV",
+      adaptabilite: "Adaptability",
+      ecouteActive: "Active listening",
+      autonomie: "Autonomy",
     },
     hero: {
       jobTitle: "Web & Data Developer | Looking for an apprenticeship",
@@ -195,11 +201,11 @@ export const dictionary = {
       title: "Professional Experience",
       ultima: {
         resp1: "Project management",
-        resp2: "Implementation of specifications",
+        resp2: "Development of a specifications document",
         resp3: "Database management",
-        resp4: "Creation of template pages",
-        resp5: "Creation of survey system",
-        resp6: "Creation of Chatbox using API and AI",
+        resp4: "Creation of an admin panel",
+        resp5: "Development of an event and inventory management system",
+        resp6: "Creation of a Chatbox using API and AI",
       },
       hackademic: {
         resp1: "Project management",

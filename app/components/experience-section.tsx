@@ -15,7 +15,7 @@ export function ExperienceSection() {
     {
       company: "Ultima",
       position: "Développeur Web",
-      period: "2022 - 2023",
+      period: "2025 - 2025",
       location: "Bordeaux & Lyon, France",
       responsibilities: [
         t("experience.ultima.resp1"),
@@ -29,7 +29,7 @@ export function ExperienceSection() {
     {
       company: "Hackademic",
       position: "Développeur Full Stack",
-      period: "2021 - 2022",
+      period: "2024 - 2024",
       location: "Bordeaux, France",
       responsibilities: [
         t("experience.hackademic.resp1"),
@@ -45,7 +45,7 @@ export function ExperienceSection() {
     {
       company: "Hsabati",
       position: "Développeur Front-end",
-      period: "2020 - 2021",
+      period: "2023 - 2023",
       location: "Casablanca, Maroc",
       responsibilities: [
         t("experience.hsabati.resp1"),
@@ -60,7 +60,7 @@ export function ExperienceSection() {
     {
       company: "Lycée Lyautey",
       position: "Gestion d'événementielle associative",
-      period: "2019 - 2020",
+      period: "2019 - 2022",
       location: "Casablanca, Maroc",
       responsibilities: [t("experience.lyautey.resp1"), t("experience.lyautey.resp2"), t("experience.lyautey.resp3")],
     },

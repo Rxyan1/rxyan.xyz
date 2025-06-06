@@ -22,7 +22,7 @@ export function ProjectsSection() {
       title: t("projects.blackjack.title"),
       description: t("projects.blackjack.description"),
       icon: <Gamepad2 className="w-10 h-10 text-sky-400" />,
-      technologies: ["JavaScript", "HTML", "CSS", "LocalStorage"],
+      technologies: ["JavaScript", "HTML", "CSS", "Three.js"],
     },
     {
       title: t("projects.scraping.title"),
@@ -34,7 +34,7 @@ export function ProjectsSection() {
       title: t("projects.streaming.title"),
       description: t("projects.streaming.description"),
       icon: <Film className="w-10 h-10 text-sky-400" />,
-      technologies: ["React", "Node.js", "MongoDB", "Express", "AWS S3"],
+      technologies: ["React", "Node.js", "MongoDB", "Express"],
     },
     {
       title: t("projects.gameServer.title"),

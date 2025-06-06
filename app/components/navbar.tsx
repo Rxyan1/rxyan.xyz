@@ -1,32 +1,11 @@
 "use client"
 
-import { useState, useEffect } from "react"
 import { useLanguage } from "./language-provider"
 import { motion } from "framer-motion"
 import { Download } from "lucide-react"
 
 export function Navbar() {
   const { t, language, setLanguage } = useLanguage()
-  const [scrolled, setScrolled] = useState(false)
-  const [mounted, setMounted] = useState(false)
-
-  // Effet pour détecter le défilement
-  useEffect(() => {
-    const handleScroll = () => {
-      const isScrolled = window.scrollY > 50
-      if (isScrolled !== scrolled) {
-        setScrolled(isScrolled)
-      }
-    }
-
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [scrolled])
-
-  // Effet pour s'assurer que le composant est monté
-  useEffect(() => {
-    setMounted(true)
-  }, [])
 
   const toggleLanguage = () => {
     setLanguage(language === "fr" ? "en" : "fr")
@@ -44,13 +23,16 @@ export function Navbar() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? "py-2 bg-gray-900/90 backdrop-blur-md shadow-md" : "py-4 bg-transparent"
-      }`}
+      className="fixed top-0 left-0 w-full z-50 py-3 bg-black shadow-md"
     >
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
+            <img 
+              src="/images/logo.png" 
+              alt="Logo" 
+              className="w-10 h-auto mr-3" 
+            />
             <a href="#" className="text-xl font-bold text-white">
               Rayane <span className="text-sky-400">Zangui</span>
             </a>
@@ -99,7 +81,7 @@ export function Navbar() {
             </button>
 
             <a
-              href="/cv-rayane-zangui.pdf"
+              href="/cv/Rayane Zangui CV.pdf"
               download
               className="hidden md:flex items-center space-x-2 px-4 py-2 rounded-full bg-sky-500 text-white hover:bg-sky-600 transition-colors"
             >

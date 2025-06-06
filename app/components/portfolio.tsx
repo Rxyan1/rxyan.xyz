@@ -4,15 +4,14 @@ import type React from "react"
 import { useState, useEffect, useRef } from "react"
 import { SkillsSection } from "./skills-section"
 import { ProjectsSection } from "./projects-section"
-import { LanguageProvider, useLanguage } from "./language-provider"
-import { Navbar } from "./navbar"
+import { useLanguage } from "./language-provider"
+// Supprimez l'import de Navbar puisqu'il est maintenant rendu par PortfolioClient
 import { HeroSection } from "./hero-section"
 import { ExperienceSection } from "./experience-section"
 import { EducationSection } from "./education-section"
 import { ContactSection } from "./contact-section"
 import { Footer } from "./footer"
 import { MouseTrail } from "./mouse-trail"
-import { ThemeProvider } from "@/components/theme-provider"
 
 // Composant interne qui utilise useLanguage
 function PortfolioContent() {
@@ -105,7 +104,7 @@ function PortfolioContent() {
   return (
     <div className="portfolio-container">
       <MouseTrail />
-      <Navbar />
+      {/* Navbar est supprimée d'ici car elle est maintenant dans PortfolioClient */}
 
       <main>
         <HeroSection />
@@ -121,13 +120,7 @@ function PortfolioContent() {
   )
 }
 
-// Composant principal qui fournit les providers
+// Composant principal - Supprimez les providers ici car ils sont déjà dans PortfolioClient
 export default function Portfolio() {
-  return (
-    <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
-      <LanguageProvider>
-        <PortfolioContent />
-      </LanguageProvider>
-    </ThemeProvider>
-  )
+  return <PortfolioContent />
 }

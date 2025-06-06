@@ -31,6 +31,7 @@ export default function RootLayout({
         <script src="/scripts/jquery.parallax.js" defer></script>
         {/* Load initialization script after both are loaded */}
         <script src="/scripts/init-parallax.js" defer></script>
+        <link rel="icon" href="/images/logo.png" type="image/png" />
       </head>
       <body className="bg-black">{children}</body>
     </html>

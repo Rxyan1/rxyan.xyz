@@ -46,9 +46,9 @@ export function SkillsSection() {
     t("skills.curious"),
     t("skills.creative"),
     t("skills.versatile"),
-    "Teamwork",
-    "Problem Solving",
-    "Communication",
+    t("nav.adaptabilite"),
+    t("nav.ecouteActive"),
+    t("nav.autonomie"),
   ]
 
   const containerVariants = {

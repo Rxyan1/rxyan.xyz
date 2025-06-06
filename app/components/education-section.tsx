@@ -14,8 +14,8 @@ export function EducationSection() {
   const education = [
     {
       degree: t("education.bachelor.degree"),
-      institution: "EFREI Paris",
-      period: "2021 - 2024",
+      institution: "EFREI Bordeaux",
+      period: "2021 - 2025",
       details: t("education.bachelor.details"),
     },
     {
